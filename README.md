@@ -1,4 +1,4 @@
 hackerrank-python
 =================
 
-HackerRank changes' python solution
+HackerRank challenges' Python solution
