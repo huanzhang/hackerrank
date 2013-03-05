@@ -1,34 +1,19 @@
 #!/bin/python
 
 # Head ends here
-def insertionSort(ar): 
-    result = ""
-    t = ar[-1]
-    for i in range(len(ar) - 2, -2, -1):
-        if i is not -1:
-            if ar[i] > t:
+def insertionSort(ar):
+        tmp = ar[-1]
+        for i in range(len(ar) - 2, -1, -1):
+            if ar[i] > tmp:
                 ar[i + 1] = ar[i]
-                if result is "":
-                    result += str(ar)
-                else:
-                    result += "\n" + str(ar)
+                print ' '.join([`num` for num in ar])
             else:
-                ar[i + 1] = t
-                if result is "":
-                    result += str(ar)
-                else:
-                    result += "\n" + str(ar)
+                ar[i + 1] = tmp
+                print ' '.join([`num` for num in ar])
                 break
-        else:
-            ar[0] = t
-            if result is "":
-                result += str(ar)
-            else:
-                result += "\n" + str(ar)
-    result = result.replace("[", "")
-    result = result.replace("]", "")
-    result = result.replace(",", "")
-    print result
+            if i is 0:
+                ar[0] = tmp
+                print ' '.join([`num` for num in ar])
 
 # Tail starts here
 
