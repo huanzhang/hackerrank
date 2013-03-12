@@ -52,6 +52,9 @@ class Node:
 
 
 def pairs(ar, k):
+    """
+    Alogorithm: Binary Search Tree Search
+    """
     count = 0
     root = Node(ar[0])
     for num in ar[1:]:

@@ -3,6 +3,9 @@
 import bisect
 
 def pairs(ar, k):
+    """
+    Algorithm: Binary Search
+    """
     ar.sort()
     count = 0
     for i in range(0, len(ar) - 1):
