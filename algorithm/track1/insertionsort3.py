@@ -4,18 +4,17 @@
 def insertionSort(ar):
     """Insert element into sorted list
     """
-    tmp = ar[-1]
-    for i in range(len(ar) - 2, -1, -1):
-        if ar[i] > tmp:
-            ar[i + 1] = ar[i]
+    j = len(ar)-2
+    value = ar[len(ar)-1]
+    while j >= 0:
+        if value < ar[j]:
+            ar[j+1] = ar[j]
             print ' '.join([`num` for num in ar])
+            ar[j] = value
+            j = j - 1
         else:
-            ar[i + 1] = tmp
             print ' '.join([`num` for num in ar])
             break
-        if i is 0:
-            ar[0] = tmp
-            print ' '.join([`num` for num in ar])
 
 # Tail starts here
 
