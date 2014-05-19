@@ -1,5 +1,5 @@
-hackerrank-python
-=================
+hackerrank
+==========
 
 Solutions for HackerRank challenges at www.hackerrank.com
 
