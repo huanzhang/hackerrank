@@ -1,7 +1,7 @@
 hackerrank-python
 =================
 
-HackerRank challenges' Python solution
+Solutions for HackerRank challenges at www.hackerrank.com
 
 endorse
 =======
